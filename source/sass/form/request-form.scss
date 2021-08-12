@@ -1,0 +1,91 @@
+@use "../common/mixins" as *;
+@use "../common/variables" as *;
+@use "../common/colors" as c;
+
+.request-form {
+  margin-bottom: 32px;
+
+  font-size: 16px;
+  color: c.$black-lightest;
+  text-transform: uppercase;
+
+  input[type=text],
+  textarea {
+    line-height: 18px;
+    color: c.$black-lightest;
+    text-transform: uppercase;
+  }
+
+  legend {
+    font-size: 24px;
+    line-height: 26px;
+    text-transform: none;
+    color: c.$black;
+  }
+}
+
+.request-form__fieldset {
+  @include reset-fieldset;
+}
+
+.form-list {
+  @include reset-list;
+}
+
+.form-option {
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.request-form__main-data {
+  margin-bottom: 27px;
+}
+
+.request-form__goal {
+  margin-bottom: 26px;
+  padding-top: 22px;
+  padding-bottom: 20px;
+
+  color: c.$black-light;
+
+  $v-border: 1px solid c.$grey-light;
+  border-top: $v-border;
+  border-bottom: $v-border;
+}
+
+.request-form__owner {
+  margin-bottom: 23px;
+
+  legend {
+    padding-bottom: 35px;
+  }
+}
+
+.request-form__comment {
+  margin-bottom: 23px;
+
+  legend {
+    padding-bottom: 37px;
+  }
+}
+
+.request-form__additional-products {
+  margin-bottom: 34px;
+
+  color: c.$black;
+
+  legend {
+    padding-bottom: 34px;
+  }
+}
+
+.request-form__legend {
+  font-family: $font-arial;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: none;
+  color: c.$black;
+}

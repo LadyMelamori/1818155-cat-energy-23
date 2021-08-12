@@ -1,0 +1,5 @@
+@use "mixins" as *;
+
+.social__list {
+  @include reset-list;
+}

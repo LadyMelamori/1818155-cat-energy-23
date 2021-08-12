@@ -1,0 +1,39 @@
+@use "../common/mixins" as *;
+@use "../common/variables" as *;
+@use "../common/colors" as c;
+
+.additional-products {
+  @include reset-list;
+}
+
+.additional-product {
+  padding-top: 13px;
+  padding-bottom: 19px;
+
+  $v-border: 1px solid c.$grey-darker;
+  border-top: $v-border;
+
+  &:last-child {
+    border-bottom: $v-border;
+  }
+}
+
+.additional-product__title {
+  @include reset-spacing;
+
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: c.$black-light;
+}
+
+.additional-product__description,
+.additional-product__price {
+  margin-bottom: 15px;
+
+  font-family: $font-arial;
+  font-size: 14px;
+  line-height: 14px;
+  color: c.$black-lightest;
+}

@@ -1,1 +1,27 @@
-// Начните писать стили здесь
+@use "common/normalize";
+@use "common/fonts";
+@use "common/global";
+
+@use "common/page";
+@use "common/page-header";
+@use "common/main-nav";
+
+@use "common/page-main";
+
+@use "common/page-footer";
+@use "common/contacts";
+@use "common/social";
+
+@use "index/headline";
+@use "index/diets";
+@use "index/how-it-works";
+@use "index/live-example";
+@use "index/slider";
+
+@use "form/form-main";
+@use "form/request-form.scss";
+
+@use "catalog/catalog-main";
+@use "catalog/products";
+@use "catalog/additional-products";
+@use "catalog/special-offer";

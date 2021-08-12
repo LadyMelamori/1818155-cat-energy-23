@@ -1,0 +1,15 @@
+@use "colors" as c;
+@use "variables" as *;
+
+.page-footer__wrapper {
+  padding-top: 39px;
+  padding-bottom: 22px;
+
+  background-color: c.$white-darker;
+}
+
+.page-footer__copyright-link {
+  font-family: $font-arial;
+  font-size: 16px;
+  color: c.$black-lightest;
+}

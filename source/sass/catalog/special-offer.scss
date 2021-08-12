@@ -1,0 +1,15 @@
+@use "../common/mixins" as *;
+@use "../common/variables" as *;
+@use "../common/colors" as c;
+
+.special-offer {
+  background: url("../../img/gift-photo-mobile.png") c.$green no-repeat;
+  text-align: center;
+}
+
+.special-offer__description {
+  font-family: $font-arial;
+  font-size: 16px;
+  line-height: 20px;
+  color: c.$white;
+}

@@ -1,0 +1,35 @@
+@use "variables" as *;
+@use "colors" as c;
+@use "mixins" as *;
+
+.main-nav__list {
+  @include reset-list;
+}
+
+.main-nav__link {
+  $v-padding: 8px;
+  padding-top: $v-padding;
+  padding-bottom: $v-padding;
+  display: block;
+  width: max-content;
+
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: $font-weight-medium;
+  text-transform: uppercase;
+  color: c.$black;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--current {
+    padding-bottom: 6px;
+    border-bottom: 2px solid c.$green;
+  }
+}
