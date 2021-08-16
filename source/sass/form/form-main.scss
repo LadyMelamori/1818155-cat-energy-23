@@ -1,0 +1,13 @@
+@use "../common/mixins" as *;
+
+.form-main__header {
+  margin-bottom: 37px;
+}
+
+.form-main__description {
+  @include reset-spacing;
+
+  margin-bottom: 39px;
+
+  text-transform: uppercase;
+}

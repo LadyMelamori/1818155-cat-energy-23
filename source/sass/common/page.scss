@@ -1,0 +1,15 @@
+@use "variables" as *;
+@use "colors" as c;
+
+.page {
+  height: 100%;
+}
+
+.page__body {
+  margin: 0;
+  padding: 10px;
+  font-family: $font-oswald;
+  color: c.$black;
+  font-size: 14px;
+  line-height: 18px;
+}

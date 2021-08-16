@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header center">
@@ -14,27 +15,27 @@
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current">
-            <a>
+            <a class="main-nav__link main-nav__link--current">
               Главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">
+            <a class="main-nav__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">
+            <a class="main-nav__link" href="form.html">
               Подбор программы
             </a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="page-main index-main">
       <section class="headline">
         <div class="center">
-          <h1 class="headline__main-header">Функциональное питание для котов</h1>
+          <h1 class="page-main__header headline__main-header">Функциональное питание для котов</h1>
           <p class="headline__slogan">Занялся собой? Займись котом!</p>
           <img class="headline__image" src="img/can-mobile.png" width="280" height="270" alt="Банка корма Cat Energy PRO со вкусом курицы 500 г">
           <a class="button headline__choose-program" href="form.html">Подобрать программу</a>
@@ -58,7 +59,7 @@
       </section>
 
       <section class="how-it-works center">
-        <h2>Как это работает</h2>
+        <h2 class="how-it-works__header">Как это работает</h2>
         <ul class="how-it-works__list">
           <li class="how-it-works__item how-it-works__item--nutrients">
             <p class="how-it-works__description">Функциональное питание содержит только полезные питательные вещества.</p>
@@ -77,7 +78,7 @@
 
       <section class="live-example">
         <div class="center">
-          <h2>Живой пример</h2>
+          <h2 class="live-example__header">Живой пример</h2>
           <p class="live-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <dl class="live-example__stats-list">
             <div class="live-example__stats-item live-example__stats-item--weightloss">
@@ -89,8 +90,8 @@
               <dd class="live-example__stats-description">затрачено времени</dd>
             </div>
             <div class="live-example__stats-item live-example__stats-item--money">
-              <dt class="live-example__stats-number">15 000 руб.</dt>
-              <dd class="live-example__stats-description">Затраты на питание: </dd>
+              <dt class="live-example__stats-number live-example__stats-number--money">15 000 руб.</dt>
+              <dd class="live-example__stats-description live-example__stats-description--money">Затраты на питание: </dd>
             </div>
           </dl>
           <div class="slider">
@@ -109,7 +110,7 @@
     <footer class="page-footer">
       <section class="page-footer__contacts contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="center">
+        <div class="contacts__text center">
           <p class="contacts__announcement">Приглашаем к сотрудничеству дилеров!</p>
           <address class="contacts__address">
             <p class="contacts__address-text">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-city">Санкт-Петербург</span></p>
@@ -117,25 +118,27 @@
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003365!2d30.320858716480476!3d59.93871916905374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1627941738071!5m2!1sen!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </section>
-      <div class="page-footer__wrapper center">
-        <a>
-          <img class="page-footer__logo-name-image" src="img/logo-name-mobile.svg" width="128" height="24" alt="Текстовый логотип &laquo;Cat Energy&raquo;">
-        </a>
-        <div class="social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-            </li>
-          </ul>
-        </div>
-        <div class="copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="page-footer__wrapper">
+        <div class="center">
+          <a>
+            <img class="page-footer__logo-name-image" src="img/logo-name-mobile.svg" width="128" height="24" alt="Текстовый логотип &laquo;Cat Energy&raquo;">
+          </a>
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright">
+            <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </div>
         </div>
       </div>
     </footer>

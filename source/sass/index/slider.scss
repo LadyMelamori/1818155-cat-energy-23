@@ -1,0 +1,26 @@
+@use "../common/colors" as c;
+@use "../common/mixins" as *;
+
+.slider__list {
+  @include reset-list;
+}
+
+.slider__item {
+  &--before {
+    display: none;
+  }
+}
+
+.slider__buttons-list {
+  @include reset-list;
+}
+
+.slider__button {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

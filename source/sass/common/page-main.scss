@@ -1,0 +1,17 @@
+@use "mixins" as *;
+@use "colors" as c;
+
+.page-main {
+  border-top: 1px solid c.$grey-light;
+}
+
+.page-main__header {
+  @include reset-spacing;
+
+  padding-top: 27px;
+
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  text-align: center;
+}

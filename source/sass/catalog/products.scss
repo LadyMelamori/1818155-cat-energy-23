@@ -1,0 +1,73 @@
+@use "../common/mixins" as *;
+@use "../common/variables" as *;
+@use "../common/colors" as c;
+
+.products {
+  @include reset-list;
+}
+
+.product {
+  padding-top: 19px;
+  padding-bottom: 25px;
+
+  $v-border: 1px solid c.$white-dark;
+  border-top: $v-border;
+
+  &:last-child {
+    border-bottom: $v-border;
+  }
+}
+
+.product__image-link {
+  margin-bottom: 13px;
+}
+
+.product__title {
+  @include reset-spacing;
+  margin-bottom: 18px;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: c.$black-light;
+
+  &--show-more {
+    margin-bottom: 8px;
+
+    color: c.$black-lighter;
+  }
+}
+
+.product__specification {
+  margin-bottom: 13px;
+
+  font-family: $font-arial;
+  font-size: 12px;
+  line-height: 16px;
+  color: c.$black-lightest;
+
+  dd {
+    @include reset-spacing;
+  }
+}
+
+.product__description {
+  &--show-more {
+    @include reset-spacing;
+
+    margin-bottom: 21px;
+
+    font-family: $font-arial;
+    font-size: 12px;
+    line-height: 16px;
+    color: c.$black-lightest;
+  }
+}
+
+.product__button {
+  &--show-more {
+    color: c.$black-lightest;
+    background-color: c.$white-darker;
+  }
+}

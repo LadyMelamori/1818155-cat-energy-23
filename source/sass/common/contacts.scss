@@ -1,0 +1,27 @@
+@use "variables" as *;
+@use "colors" as c;
+@use "mixins" as *;
+
+.contacts__text {
+  padding-top: 28px;
+  padding-bottom: 26px;
+}
+
+.contacts__announcement {
+  @include reset-spacing;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: c.$black-lighter;
+}
+
+.contacts__address {
+  font-style: normal;
+}
+
+.contacts__address-text {
+  font-family: $font-arial;
+  line-height: 20px;
+  color: c.$black-lightest;
+}

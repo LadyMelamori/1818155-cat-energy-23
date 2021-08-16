@@ -1,0 +1,51 @@
+@use "../common/mixins" as *;
+@use "../common/colors" as c;
+@use "../common/variables" as *;
+
+.diets {
+  margin-bottom: 27px;
+}
+
+.diets__list {
+  @include reset-list;
+}
+
+.diets__item {
+  margin-bottom: 20px;
+  padding: 30px 20px 18px;
+  background-color: c.$white-darker;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.diets__title {
+  margin-top: 0;
+  margin-bottom: 29px;
+
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.diets__description {
+  @include reset-spacing;
+  margin-bottom: 38px;
+
+  font-family: $font-arial;
+  color: c.$black-lightest;
+}
+
+.diets__link {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  color: c.$black;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
