@@ -8,6 +8,11 @@
 
 .diets__list {
   @include reset-list;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 80px;
+  }
 }
 
 .diets__item {
@@ -17,6 +22,14 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+
+    &:last-child {
+      margin-bottom: 71px;
+    }
   }
 }
 

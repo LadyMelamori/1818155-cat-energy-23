@@ -35,7 +35,7 @@
     </header>
     <main class="page-main index-main">
       <section class="headline">
-        <div class="center">
+        <div class="center headline__wrapper">
           <h1 class="page-main__header headline__main-header">Функциональное питание для котов</h1>
           <p class="headline__slogan">Занялся собой? Займись котом!</p>
           <img class="headline__image" src="img/can-mobile.png" width="280" height="270" alt="Банка корма Cat Energy PRO со вкусом курицы 500 г">
@@ -80,30 +80,34 @@
       <section class="live-example">
         <div class="center">
           <h2 class="live-example__header">Живой пример</h2>
-          <p class="live-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <dl class="live-example__stats-list">
-            <div class="live-example__stats-item live-example__stats-item--weightloss">
-              <dt class="live-example__stats-number">5 кг</dt>
-              <dd class="live-example__stats-description">снижение веса</dd>
+          <div class="live-example__content">
+            <div class="live-example__text">
+              <p class="live-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+              <dl class="live-example__stats-list">
+                <div class="live-example__stats-item live-example__stats-item--weightloss">
+                  <dt class="live-example__stats-number">5 кг</dt>
+                  <dd class="live-example__stats-description">снижение веса</dd>
+                </div>
+                <div class="live-example__stats-item live-example__stats-item--time">
+                  <dt class="live-example__stats-number">60 дней</dt>
+                  <dd class="live-example__stats-description">затрачено времени</dd>
+                </div>
+                <div class="live-example__stats-item live-example__stats-item--money">
+                  <dt class="live-example__stats-number live-example__stats-number--money">15 000 руб.</dt>
+                  <dd class="live-example__stats-description live-example__stats-description--money">Затраты на питание: </dd>
+                </div>
+              </dl>
             </div>
-            <div class="live-example__stats-item live-example__stats-item--time">
-              <dt class="live-example__stats-number">60 дней</dt>
-              <dd class="live-example__stats-description">затрачено времени</dd>
+            <div class="slider">
+              <ul class="slider__list">
+                <li class="slider__item slider__item--before"><img src="img/before-mobile.png" width="311" height="232" alt="Толстый кот до диеты" class="slider__image"></li>
+                <li class="slider__item slider__item--after"><img src="img/after-mobile.png" width="251" height="240" alt="Худой кот после диеты" class="slider__image"></li>
+              </ul>
+              <ul class="slider__buttons-list">
+                <li class="slider__buttons-item"><button class="slider__button" type="button">Было</button></li>
+                <li class="slider__buttons-item"><button class="slider__button" type="button">Стало</button></li>
+              </ul>
             </div>
-            <div class="live-example__stats-item live-example__stats-item--money">
-              <dt class="live-example__stats-number live-example__stats-number--money">15 000 руб.</dt>
-              <dd class="live-example__stats-description live-example__stats-description--money">Затраты на питание: </dd>
-            </div>
-          </dl>
-          <div class="slider">
-            <ul class="slider__list">
-              <li class="slider__item slider__item--before"><img src="img/before-mobile.png" width="311" height="232" alt="Толстый кот до диеты" class="slider__image"></li>
-              <li class="slider__item slider__item--after"><img src="img/after-mobile.png" width="251" height="240" alt="Худой кот после диеты" class="slider__image"></li>
-            </ul>
-            <ul class="slider__buttons-list">
-              <li class="slider__buttons-item"><button class="slider__button" type="button">Было</button></li>
-              <li class="slider__buttons-item"><button class="slider__button" type="button">Стало</button></li>
-            </ul>
           </div>
         </div>
       </section>
@@ -112,15 +116,17 @@
       <section class="page-footer__contacts contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__text center">
-          <p class="contacts__announcement">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__address">
-            <p class="contacts__address-text">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-city">Санкт-Петербург</span></p>
-          </address>
+          <div class="contacts__text-wrapper">
+            <p class="contacts__announcement">Приглашаем к сотрудничеству дилеров!</p>
+            <address class="contacts__address">
+              <p class="contacts__address-text">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-city">Санкт-Петербург</span></p>
+            </address>
+          </div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003365!2d30.320858716480476!3d59.93871916905374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1627941738071!5m2!1sen!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003365!2d30.320858716480476!3d59.93871916905374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1627941738071!5m2!1sen!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </section>
       <div class="page-footer__wrapper">
-        <div class="center">
+        <div class="center page-footer__inner-wrapper">
           <a>
             <img class="page-footer__logo-name-image" src="img/logo-name-mobile.svg" width="128" height="24" alt="Текстовый логотип &laquo;Cat Energy&raquo;">
           </a>

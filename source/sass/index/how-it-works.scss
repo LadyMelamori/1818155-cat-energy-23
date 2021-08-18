@@ -17,6 +17,18 @@
 
 .how-it-works__list {
   @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 153px;
+    row-gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 80px;
+  }
 }
 
 .how-it-works__item {
