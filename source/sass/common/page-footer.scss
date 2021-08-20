@@ -8,6 +8,13 @@
   background-color: c.$white-darker;
 }
 
+.page-footer__inner-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .page-footer__copyright-link {
   font-family: $font-arial;
   font-size: 16px;

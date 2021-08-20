@@ -4,6 +4,19 @@
 
 .main-nav__list {
   @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.main-nav__item {
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .main-nav__link {
@@ -31,5 +44,11 @@
   &--current {
     padding-bottom: 6px;
     border-bottom: 2px solid c.$green;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

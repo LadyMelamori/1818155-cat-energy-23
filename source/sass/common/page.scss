@@ -7,9 +7,12 @@
 
 .page__body {
   margin: 0;
-  padding: 10px;
   font-family: $font-oswald;
   color: c.$black;
   font-size: 14px;
   line-height: 18px;
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 }

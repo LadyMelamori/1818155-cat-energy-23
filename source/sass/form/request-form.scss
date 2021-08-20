@@ -28,18 +28,6 @@
   @include reset-fieldset;
 }
 
-.form-list {
-  @include reset-list;
-}
-
-.form-option {
-  margin-bottom: 12px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
 .request-form__main-data {
   margin-bottom: 27px;
 }

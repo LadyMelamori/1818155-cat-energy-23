@@ -1,5 +1,6 @@
 @use "../common/colors" as c;
 @use "../common/mixins" as *;
+@use "../common/variables" as *;
 
 .headline {
   margin-bottom: 22px;
@@ -10,6 +11,17 @@
   background:
     linear-gradient(to right, rgba(c.$green, 0.85), rgba(c.$green, 0.85)) top/auto 302px no-repeat,
     url("../../img/headline-bg-mobile.png") top center no-repeat;
+}
+
+.headline__wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    height: 872px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 585px;
+  }
 }
 
 .headline__main-header {
@@ -26,6 +38,17 @@
 
 .headline__image {
   margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: auto;
+    right: 220px;
+  }
 }
 
 .headline__choose-program {
