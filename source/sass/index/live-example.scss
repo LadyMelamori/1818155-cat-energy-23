@@ -3,7 +3,8 @@
 @use "../common/variables" as *;
 
 .live-example {
-  padding: 27px 20px 25px;
+  padding-top: 27px;
+  padding-bottom: 25px;
 
   background-color: c.$white-darkest;
 }

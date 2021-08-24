@@ -1,14 +1,22 @@
 @use "../common/mixins" as *;
+@use "../common/variables" as *;
 
 .catalog-main__header {
   margin-bottom: 41px;
 }
 
-.catalog-main__additinal-products {
+.catalog-main__additional-products-and-offer {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    margin-bottom: 86px;
+  }
+}
+
+.catalog-main__additional-products {
   padding-top: 25px;
 }
 
-.catalog-main__additinal-products-header {
+.catalog-main__additional-products-header {
   @include reset-spacing;
 
   margin-bottom: 36px;

@@ -1,5 +1,6 @@
 @use "mixins" as *;
 @use "colors" as c;
+@use "variables" as *;
 
 .page-main {
   border-top: 1px solid c.$grey-light;

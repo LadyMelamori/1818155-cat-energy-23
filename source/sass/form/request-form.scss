@@ -28,8 +28,20 @@
   @include reset-fieldset;
 }
 
+.request-form_main-data-and-goal {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+
+    padding-bottom: 69px;
+  }
+}
+
 .request-form__main-data {
   margin-bottom: 27px;
+  display: flex;
+  flex-direction: column;
 }
 
 .request-form__goal {
@@ -42,13 +54,35 @@
   $v-border: 1px solid c.$grey-light;
   border-top: $v-border;
   border-bottom: $v-border;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.request-form__goal-wrapper {
+  @media (min-width: $tablet-width) {
+    border: 1px solid c.$grey-light;
+  }
 }
 
 .request-form__owner {
   margin-bottom: 23px;
+  display: flex;
+  flex-direction: column;
 
   legend {
     padding-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
   }
 }
 
@@ -67,6 +101,25 @@
 
   legend {
     padding-bottom: 34px;
+  }
+}
+
+.request-form__additional-products-list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 123px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 104px;
+  }
+}
+
+.request-form__button-and-legend {
+  @media (min-width: $tablet-width) {
+    display: flex;
   }
 }
 

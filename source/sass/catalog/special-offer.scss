@@ -3,8 +3,21 @@
 @use "../common/colors" as c;
 
 .special-offer {
-  background: url("../img/gift-photo-mobile.png") c.$green no-repeat;
+  width: 280px;
+  height: 290px;
+
+  background:
+    linear-gradient(to right, rgba(c.$green, 0.85), rgba(c.$green, 0.85)) no-repeat,
+    url("../img/gift-photo-mobile.png") c.$green no-repeat;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 289px;
+    position: absolute;
+    right: 110px;
+    top: 141px;
+  }
 }
 
 .special-offer__description {
