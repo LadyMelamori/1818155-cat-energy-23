@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи — Подбор программы</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -38,36 +39,40 @@
         <p class="form-main__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </div>
       <form class="request-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="center">
-          <fieldset class="request-form__fieldset request-form__main-data">
-            <legend class="visually-hidden">Основные данные о коте</legend>
-            <label for="cat-name">Имя:*</label>
-            <input id="cat-name" type="text" name="cat-name" placeholder="Барсик" required>
-            <label for="cat-weight">Вес (кг):*</label>
-            <input id="cat-weight" type="number" name="cat-weight" placeholder="7" required>
-            <label for="cat-age">Возраст (лет):</label>
-            <input id="cat-age" type="number" name="cat-age" placeholder="7">
+        <div class="request-form_main-data-and-goal center-desktop">
+          <div class="center no-center-desktop">
+            <fieldset class="request-form__fieldset request-form__main-data">
+              <legend class="visually-hidden">Основные данные о коте</legend>
+              <label for="cat-name">Имя:*</label>
+              <input id="cat-name" type="text" name="cat-name" placeholder="Барсик" required>
+              <label for="cat-weight">Вес (кг):*</label>
+              <input id="cat-weight" type="number" name="cat-weight" placeholder="7" required>
+              <label for="cat-age">Возраст (лет):</label>
+              <input id="cat-age" type="number" name="cat-age" placeholder="7">
+            </fieldset>
+          </div>
+          <fieldset class="request-form__fieldset request-form__goal">
+            <div class="center no-center-desktop">
+              <div class="request-form__goal-wrapper">
+                <legend class="visually-hidden">Цель диеты</legend>
+                <ul class="form-list">
+                  <li class="form-option">
+                    <input class="visually-hidden form-input-radio" type="radio" name="diet-type" value="weight-loss" id="diet-type-weight-loss" checked>
+                    <label for="diet-type-weight-loss">Похудение</label>
+                  </li>
+                  <li class="form-option">
+                    <input class="visually-hidden form-input-radio" type="radio" name="diet-type" value="weight-gain" id="diet-type-weight-gain">
+                    <label for="diet-type-weight-gain">Набор массы</label>
+                  </li>
+                  <li class="form-option">
+                    <input class="visually-hidden form-input-radio" type="radio" name="diet-type" value="need-advice" id="diet-type-need-advice">
+                    <label for="diet-type-need-advice">Не знаю (нужен ваш совет)</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </fieldset>
         </div>
-        <fieldset class="request-form__fieldset request-form__goal">
-          <div class="center">
-            <legend class="visually-hidden">Цель диеты</legend>
-            <ul class="form-list">
-              <li class="form-option">
-                <input class="visually-hidden form-input-radio" type="radio" name="diet-type" value="weight-loss" id="diet-type-weight-loss" checked>
-                <label for="diet-type-weight-loss">Похудение</label>
-              </li>
-              <li class="form-option">
-                <input class="visually-hidden form-input-radio" type="radio" name="diet-type" value="weight-gain" id="diet-type-weight-gain">
-                <label for="diet-type-weight-gain">Набор массы</label>
-              </li>
-              <li class="form-option">
-                <input class="visually-hidden form-input-radio" type="radio" name="diet-type" value="need-advice" id="diet-type-need-advice">
-                <label for="diet-type-need-advice">Не знаю (нужен ваш совет)</label>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
         <div class="center">
           <fieldset class="request-form__fieldset request-form__owner">
             <legend>Контактные данные (владельца кота)</legend>
@@ -83,7 +88,7 @@
           </fieldset>
           <fieldset class="request-form__fieldset request-form__additional-products">
             <legend>Дополнительно</legend>
-            <ul class="form-list">
+            <ul class="form-list request-form__additional-products-list">
               <li class="form-option">
                 <input class="visually-hidden form-input-checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
                 <label for="sweetener">Сахарозаменитель</label>
@@ -102,8 +107,10 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button request-form__submit-button" type="submit">Отправить заявку</button>
-          <p class="request-form__legend">* — Обязательные поля</p>
+          <div class="request-form__button-and-legend">
+            <button class="button request-form__submit-button" type="submit">Отправить заявку</button>
+            <p class="request-form__legend">* — Обязательные поля</p>
+          </div>
         </div>
       </form>
     </main>
@@ -111,15 +118,17 @@
       <section class="page-footer__contacts contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__text center">
-          <p class="contacts__announcement">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__address">
-            <p class="contacts__address-text">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-city">Санкт-Петербург</span></p>
-          </address>
+          <div class="contacts__text-wrapper">
+            <p class="contacts__announcement">Приглашаем к сотрудничеству дилеров!</p>
+            <address class="contacts__address">
+              <p class="contacts__address-text">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-city">Санкт-Петербург</span></p>
+            </address>
+          </div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003365!2d30.320858716480476!3d59.93871916905374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1627941738071!5m2!1sen!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003365!2d30.320858716480476!3d59.93871916905374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1627941738071!5m2!1sen!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </section>
       <div class="page-footer__wrapper">
-        <div class="center">
+        <div class="center page-footer__inner-wrapper">
           <a>
             <img class="page-footer__logo-name-image" src="img/logo-name-mobile.svg" width="128" height="24" alt="Текстовый логотип &laquo;Cat Energy&raquo;">
           </a>

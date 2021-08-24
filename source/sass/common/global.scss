@@ -35,6 +35,7 @@ img {
 .center {
   width: $mobile-width;
   margin: 0 auto;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
@@ -44,6 +45,42 @@ img {
   @media (min-width: $desktop-width) {
     width: $desktop-width;
     padding: 0 110px;
+  }
+}
+
+.center-tablet {
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 0 110px;
+  }
+}
+
+.no-center-tablet {
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 0;
+  }
+}
+
+.center-desktop {
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 0 110px;
+  }
+}
+
+.no-center-desktop {
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding: 0;
   }
 }
 
