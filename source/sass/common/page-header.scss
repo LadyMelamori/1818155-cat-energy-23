@@ -1,14 +1,14 @@
 @use "variables" as *;
 
 .page-header {
-  padding-bottom: 17px;
-
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .page-header__logo {
   width: 191px;
+  height: 65px;
 
   display: flex;
   justify-content: space-between;
